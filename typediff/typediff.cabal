@@ -1,24 +1,41 @@
--- This file has been generated from package.yaml by hpack version 0.14.1.
+-- This file has been generated from package.yaml by hpack version 0.22.0.
 --
 -- see: https://github.com/sol/hpack
+--
+-- hash: 0eab7e9a18912efd80f6969786cf52600b32c1b20f9e1361192c8dd034bf72d1
 
 name:             typediff
 version:          0.1.0
+synopsis:         type-diff
+description:      type-diff.
 build-type:       Simple
+copyright:        (c) 2012-2017 Simon Hengel,
+                  (c) 2014-2017 João Cristóvão,
+                  (c) 2015-2017 Ryan Scott
+license:          MIT
+license-file:     LICENSE
+category:         Compatibility
+author:           Simon Hengel <sol@typeful.net>,
+                  João Cristóvão <jmacristovao@gmail.com>,
+                  Ryan Scott <ryan.gl.scott@gmail.com>
+maintainer:       Simon Hengel <sol@typeful.net>,
+                  João Cristóvão <jmacristovao@gmail.com>,
+                  Ryan Scott <ryan.gl.scott@gmail.com>
 cabal-version:    >= 1.10
 
 executable typediff
   hs-source-dirs:
       driver
-    , src
+      src
   main-is: Main.hs
   other-modules:
       TypeDiff
+      Paths_typediff
   build-depends:
-      base >= 4.7
+      base >=4.7 && <5
     , containers
-    , uniplate
     , haskell-src-exts-simple
+    , uniplate
   ghc-options: -Wall
   default-language: Haskell2010
 
@@ -26,16 +43,17 @@ test-suite spec
   type: exitcode-stdio-1.0
   hs-source-dirs:
       test
-    , src
+      src
   main-is: Spec.hs
   other-modules:
       TypeDiffSpec
       TypeDiff
+      Paths_typediff
   build-depends:
-      base >= 4.7
+      base >=4.7 && <5
     , containers
-    , uniplate
     , haskell-src-exts-simple
-    , hspec == 2.*
+    , hspec ==2.*
+    , uniplate
   ghc-options: -Wall
   default-language: Haskell2010

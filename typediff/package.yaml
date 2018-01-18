@@ -1,9 +1,32 @@
 version: 0.1.0
 
+synopsis: type-diff
+
+description: type-diff.
+
+author:
+  - Simon Hengel <sol@typeful.net>
+  - João Cristóvão <jmacristovao@gmail.com>
+  - Ryan Scott <ryan.gl.scott@gmail.com>
+
+maintainer:
+  - Simon Hengel <sol@typeful.net>
+  - João Cristóvão <jmacristovao@gmail.com>
+  - Ryan Scott <ryan.gl.scott@gmail.com>
+
+copyright:
+  - (c) 2012-2017 Simon Hengel
+  - (c) 2014-2017 João Cristóvão
+  - (c) 2015-2017 Ryan Scott
+
+category: Compatibility
+
+license: MIT
+
 ghc-options: -Wall
 
 dependencies:
-  - base >= 4.7
+  - base >= 4.7 && < 5
   - containers
   - uniplate
   - haskell-src-exts-simple
