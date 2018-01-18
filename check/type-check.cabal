@@ -17,9 +17,24 @@ category:            Compatibility
 build-type:          Simple
 cabal-version:       >=1.10
 extra-source-files:  README.markdown,
-                     check-hs/*.check.hs,
-                     index/*.index,
-                     types/*.types
+                     check-hs/Control.Monad.Compat.check.hs,
+                     check-hs/Data.Complex.Compat.check.hs,
+                     check-hs/Data.Foldable.Compat.check.hs,
+                     check-hs/Data.List.Compat.check.hs,
+                     check-hs/Data.Ratio.Compat.check.hs,
+                     check-hs/Prelude.Compat.check.hs,
+                     index/Control.Monad.Compat.index,
+                     index/Data.Complex.Compat.index,
+                     index/Data.Foldable.Compat.index,
+                     index/Data.List.Compat.index,
+                     index/Data.Ratio.Compat.index,
+                     index/Prelude.Compat.index,
+                     types/Control.Monad.Compat.types,
+                     types/Data.Complex.Compat.types,
+                     types/Data.Foldable.Compat.types,
+                     types/Data.List.Compat.types,
+                     types/Data.Ratio.Compat.types,
+                     types/Prelude.Compat.types
 tested-with:         GHC == 7.0.1,  GHC == 7.0.2,  GHC == 7.0.3,  GHC == 7.0.4
                    , GHC == 7.2.1,  GHC == 7.2.2
                    , GHC == 7.4.1,  GHC == 7.4.2
